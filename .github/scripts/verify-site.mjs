@@ -73,10 +73,14 @@ if (!/<header\b[^>]*id="site-header"[^>]*>/.test(html)) {
 }
 
 const llms = readFileSync(resolve(repoRoot, 'llms.txt'), 'utf8');
-for (const requiredProduct of ['GenCatalog', 'Fieldnote', 'Street Legal', 'Shachar: A Shabbat Alarm']) {
+for (const requiredProduct of ['GenCatalog', 'Fieldnote', 'Street Legal']) {
   if (!llms.includes(requiredProduct)) {
     fail(`llms.txt is missing product: ${requiredProduct}`);
   }
+}
+
+if (/shachar/i.test(llms)) {
+  fail('llms.txt must not list the personal Shachar project.');
 }
 
 const sitemap = readFileSync(resolve(repoRoot, 'sitemap.xml'), 'utf8');
@@ -90,4 +94,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log(`Verified Second Act Labs ${contract.identity}: required identity, four-product hero, machine-readable copy, and ${Object.keys(contract.identityAssetSha256).length} pinned identity assets.`);
+console.log(`Verified Second Act Labs ${contract.identity}: required identity, three-product hero, machine-readable copy, and ${Object.keys(contract.identityAssetSha256).length} pinned identity assets.`);
