@@ -16,9 +16,7 @@
     "assets/gencatalog-library.webp",
     "assets/fieldnote-watch.png",
     "assets/fieldnote-page-note.png",
-    "assets/street-legal-parked.png",
-    "assets/shachar-plan.jpg",
-    "assets/shachar-splash-dark.png"
+    "assets/street-legal-parked.png"
   ],
   "forbiddenFiles": [
     "design-qa.md",
@@ -31,15 +29,13 @@
     "family:'IBM Plex Mono'",
     "<span>Second <em>Act</em> Labs</span>",
     "Software, taken personally.",
-    "grid-template-columns:repeat(4,minmax(0,1fr))",
-    "SHACHAR: A SHABBAT ALARM",
+    "grid-template-columns:repeat(3,minmax(0,1fr))",
     "Built by",
     "href=\"/favicon.ico\"",
     "href=\"/avatar-180.png\"",
     "https://gencatalog.app",
     "https://apps.apple.com/us/app/fieldnote-a-voice-journal/id6794043971",
-    "https://streetlegalnyc.com/",
-    "https://getshachar.com/"
+    "https://streetlegalnyc.com/"
   ],
   "forbiddenHtmlSnippets": [
     "A STUDIO OF ONE",
@@ -47,10 +43,13 @@
     "second-act-labs-header-lockup",
     "mix-blend-mode",
     "family=Geist",
-    "family=Newsreader"
+    "family=Newsreader",
+    "SHACHAR",
+    "Shachar",
+    "getshachar.com"
   ],
   "expectedCounts": {
-    "class=\"idx\"": 4,
+    "class=\"idx\"": 3,
     "Second <em>Act</em> Labs": 2,
     "<section data-rhero": 1
   },

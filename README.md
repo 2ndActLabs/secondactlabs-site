@@ -5,7 +5,7 @@ Static site, no build step. Production is the Git-connected Cloudflare Pages pro
 
 ## Contents
 - index.html — the entire site (inline CSS + vanilla JS: contour-field hero, scroll reveals, parallax, hide-on-scroll header)
-- assets/ — product screenshots for GenCatalog, Fieldnote, Street Legal, and Shachar
+- assets/ — product screenshots for GenCatalog, Fieldnote, and Street Legal
 - favicon.svg / favicon.ico / favicon-16.png / favicon-32.png — the rule mark alone (identity rule 1)
 - avatar-180.png (apple-touch-icon), avatar-512.png
 - robots.txt, sitemap.xml, llms.txt
@@ -16,7 +16,7 @@ Static site, no build step. Production is the Git-connected Cloudflare Pages pro
 - Off-white is #f4f1ea on #0b0a09, per the identity sheet.
 - The "2A" monogram is retired. The masthead is the double-rule glyph + Second *Act* Labs.
 - Footer colophon uses the paste-ready "Built by" setting from identity-final/colophons/street-legal.html.
-- Shachar was added as the fourth product after the refreshed identity package was created.
+- The studio portfolio contains GenCatalog, Fieldnote, and Street Legal.
 
 ## Deployment
 - Fonts load from Google Fonts — no local font files needed.
